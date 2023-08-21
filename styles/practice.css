@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+#nav-bar nav{
+    flex: 1;
+    text-align: right;
+    font-size: small;
+}
+#nav-bar nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+#nav-bar nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+#nav-bar a{
+    text-decoration: none;
+color: white;
+}
+select{
+    color:black;
+    font-size: 10px;
+}
+.logo{
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+.logo h2{
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+.logo nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 25%;
+}
+nav .image{
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+    background-color: red;
+    background-color: black;
+    margin-right: 160px;
+}
+nav img{
+    
+    background-color: black;
+}
+ ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+nav  .shape{
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: steps(3s);
+}
+nav a:hover{
+    text-decoration: underline 3px orangered ;
+    color: midnightblue;
+}
+.row{
+    background-color: rgb(222,208,183);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    padding-right: 50px;
+}
+.col-2 h4{
+    color: red;
+    padding-bottom: 15px;
+    margin-left: 70px;
+}
+.col-2 h1{
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 70px;
+}
+.col-2 h5{
+    opacity: 0.5;
+    margin-left: 70px;
+}
+.btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.btn{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background: red;
+}
+.jst{
+
+}
+.row{
+    ma
+}
