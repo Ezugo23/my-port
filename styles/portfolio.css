@@ -202,6 +202,11 @@ border-radius: 6px;
 }
 .about .about-content .right p{
   text-align: justify;
+  letter-spacing: 0.1em;
+}
+.about .about-content .right h4{
+  font-size: 20px;
+  font-weight: 500;
 }
 .about .about-content .right a{
   display: inline-block;
@@ -317,7 +322,7 @@ border-radius: 6px;
   width: 90%;
 }
 .skills-content .right .css::before{
-  width: 60%;
+  width: 40%;
 }
 .skills-content .right .js::before{
   width: 85%;
@@ -452,11 +457,10 @@ footer span{
     display: block;
     z-index: 999;
   }
-  .menu-btn img.active:before{
-    background: url(icons8-menu-50.png)no-repeat;
-    width: 4%;
+  .menu-btn .active:before{
+    content: "";
   }
-  .navbar .menu{
+  .navbar .menu{ 
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -465,6 +469,7 @@ footer span{
     text-align: center;
     background: #111;
     padding-top: 80px;
+    transition: all 0.3s ease;
   }
   .navbar .menu.active{
     left: 0;
@@ -477,19 +482,21 @@ footer span{
      margin: 20px 0;
      font-size: 25px;
   }
- 
-  /*.navbar .menu-btn.active{
+ .navbar .menu-btn.active{
     z-index: 999;
     
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
-  }*/
-/*@media(max-width: 947px){
-  .max-width{
-    padding: 0 50px;
   }
-}*/
+
+.menu-btn .closebtn {
+    display: none;
+}
+
+.menu-btn .openbtn {
+    display: block;
+}
   .home .home-content .text-2{
     font-size: 70px;
   }

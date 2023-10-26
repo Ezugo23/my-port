@@ -17,14 +17,15 @@ $(document).ready(function(){
     });
 
     //togle menu/navbar
-    $('.menu-btn').click(function(){
+    $('.menu-btn').click(function () {
       $('.navbar .menu').toggleClass("active");
-      $('.menu-btn img').toggleClass("active");
-    });
+      $('.menu-btn .openbtn').toggle();
+      $('.menu-btn .closebtn').toggle();
+  });
 });
 //typing Animation
 var typed = new Typed(".typing", {
-  strings: ["Web Developer", "FrontEnd Dev", "FreeLancer"],
+  strings: ["JavaScript Dev", "React Dev", "FreeLancer"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
