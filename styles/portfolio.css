@@ -8,6 +8,9 @@
 html{
   scroll-behavior: smooth;
 }
+a{
+  color: #fff;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 80px;
@@ -132,7 +135,7 @@ transition: all 0.3s ease;
 section{
   padding: 100px 0;
 }
-.about, .services, .skills, .contact footer{
+.about, .services, .skills, .projects .contact footer{
   font-family: 'poppins', sans-serif;
 }
 .about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content{
@@ -178,7 +181,7 @@ section .title::after{
    width: 45%;
 }
 .about .about-content .left img{
-  height: 400px;
+  height: 500px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
@@ -224,14 +227,16 @@ border-radius: 6px;
   background-color: firebrick;
 }
 /*services seion*/
-.services{
+.services, .projects{
   background: black;
   color: white;
 }
-.services .title::before{
+.services .title::before, 
+.projects .title::before {
   background: white;
 }
-.services .title::after{
+.services .title::after,
+.projects .title::after {
    content: "what i provide";
    background: #111;
 }
@@ -324,6 +329,12 @@ border-radius: 6px;
 .skills-content .right .css::before{
   width: 40%;
 }
+skills-content .right .node::before{
+  width: 50%;
+}
+skills-content .right .django::before{
+  width: 60%;
+}
 .skills-content .right .js::before{
   width: 85%;
 }
@@ -336,6 +347,83 @@ border-radius: 6px;
 .skills-content .right .gh::before{
   width: 75%;
 }
+#more{
+  display: none;
+}
+/*Projects*/
+.projects .title::after{
+  content: 'My Works';
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+  background: crimson;
+}
+.projects .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.projects .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.projects .carousel img{
+    height: 200px;
+    width: 80px;
+    object-fit: cover;
+    /*border-radius: 50%;*/
+    border: 5px solid;
+}
+.projects .carousel .card:hover img{
+  border-color: white;
+  transition: all 0.3s ease;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  height: 13px;
+  width: 13px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid crimson !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  cursor: pointer;
+  background: crimson !important;
+}
+.carousel-item {
+  opacity: 1;
+  transform: translateX(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
 /* contact section styling*/
 .contact .title::after{
   content: "get in touch";
@@ -445,7 +533,7 @@ footer span{
 }
 @media(max-width: 1104px){
   .about .about-content .left img{
-    height: 350px;
+    height: 450px;
     width: 350px;
   }
 }
