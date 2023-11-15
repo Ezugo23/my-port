@@ -70,7 +70,7 @@ var typed = new Typed(".typing", {
   loop: true
 });
 var typed = new Typed(".typing-2", {
-  strings: ["HTML", "CSS", "JavaScript", "React Js", "Node Js", "Django", "Tailwind Css", "Git", "GitHub"],
+  strings: ["HTML", "CSS", "JavaScript", "React Js", "Node Js", "Django", "Tailwind Css", "Git"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true
